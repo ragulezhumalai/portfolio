@@ -1,0 +1,144 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+:root{
+  --primary:rgb(65, 183, 102);
+}
+
+::selection{
+  color:var(--primary);
+  background-color: none;
+}
+
+.header{
+  padding:10px 5px 5px;
+  font-size: 1em;
+  color:var(--primary);
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(10, 10, 10);
+  font-family: 'Josefin Sans', sans-serif;
+  position:relative;
+}
+
+.title{
+  margin:10px 5px 5px 10px;
+  font-size:2.5em;
+}
+.title span{
+  color:white;
+}
+
+li{
+  transition: .4s;
+
+  font-weight: bold;
+  padding:5px;
+  display:inline-block;
+  Margin:5px 8px 5px 8px;
+
+}
+ 
+
+a{
+  text-decoration:none;
+  font-size: 1.2em;
+  color:white;
+}
+
+a:hover{
+color:var(--primary);
+transition:.4s;
+
+}
+
+li::after{
+  content:'';
+  display:block;
+  border-radius: 2px ;
+  background-color: rgb(255, 0, 43);
+  height:2px;
+  align-items: center;
+  width:0%;
+  transform: scaleX(1);
+  transition:  .4s;
+ }
+ li:hover::after{
+  content:'';
+  display:block;
+  border: 2px --primary;
+  border-radius: 30px;
+  background-color: var(--primary) ;
+  height:3px;
+  width:100%;
+  transform: scaleX(1);
+  
+ }
+ 
+ .burger{
+  display: none;
+ }
+ /*small screens*/
+ @media (max-width:600px){
+
+
+ .nbar{
+  display:flex;
+  position: absolute;
+  flex-direction: column;
+  top:100%;
+  height:80vh;
+  left:-3rem;
+  width: 0em;
+  background-color: rgb(20, 20, 20);
+  justify-content: space-around;
+  align-items:center;
+  border-radius: 10px;
+transition: all  .5s ease;
+ }
+.nbar a{
+  display:block;
+  margin-right: 5px;
+  transition: all .5s ease;
+}
+
+ 
+ .burger{
+  display:block;
+  color:white;
+  padding:20px;
+  font-size: 30px;
+  cursor: pointer;
+ }
+ .burger:hover{
+  color:var(--primary);
+  transition: .4s;
+ }
+.burger:active{
+  color:rgb(255, 0, 43);
+  transition: .4s;
+}
+ }
+ .nbar-active{
+  width:107%;
+
+ }
+
+
+
+
+ /*maincontent */
+
+.content{
+  color:white;
+  background-color: black;
+  height:100vh;
+  padding:10px;
+  font-family: 'josefin Sans';
+}
+
+
+

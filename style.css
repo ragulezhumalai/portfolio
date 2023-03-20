@@ -82,7 +82,7 @@ li::after{
   display: none;
  }
  /*small screens*/
- @media (max-width:600px){
+ @media (max-width:650px){
 
 
  .nbar{
@@ -176,6 +176,43 @@ transition: all  .5s ease;
 .TScontent{
 
   flex:2;
+}
+.skills{
+  color:var(--primary);
+  font-size: 40px;
+}
+
+#java{
+  color:black;
+  background-color: var(--primary);
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px 8px 1px;
+  border-radius: 5px;
+}
+#c{
+ color: black;
+ font-weight: bolder;
+ font-size: 31px;
+ border-radius: 5px;
+ padding:3px 8px;
+ background-color: var(--primary);
+}
+
+
+hr{
+  margin-top:10px;
+  color:var(--primary);
+  background-color: var(--primary);
+  outline: none;
+  border:1px solid var(--primary);
+  box-shadow:0px 0px 10px 2px var(--primary);
+}
+.L-known{
+margin:10px 0px;
+color: white;
+font-size: 20px;
+
 }
 
 

@@ -177,33 +177,39 @@ transition: all  .5s ease;
 
   flex:2;
 }
-.c1-input{
-  display: inline-block;
-  position:relative;
-  padding:10px;
-}
-.con-btn{
-  background-color: var(--primary);
-  height:30px;
-  border-radius: 30px;
-  width:62px;
-  top:45px;
-  right:15px;
-  border:1px solid --primary;
-  box-shadow: 1px 10px 10px 10px --primary;
- position: absolute;
- outline: none;
+.skills{
+  color:var(--primary);
+  font-size: 40px;
 }
 
-.con-input{
-border: 2px solid var(--primary);
-margin-top: 30px;
-color: var(--primary);
-border-radius: 20px;;
-background-color: rgba(79, 79, 79, 0.251);
-width:310px;
-height: 40px;
-outline: none;
+#java{
+  color:black;
+  background-color: var(--primary);
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px 8px 1px;
+  border-radius: 5px;
+}
+#c{
+ color: black;
+ font-weight: bolder;
+ font-size: 31px;
+ border-radius: 5px;
+ padding:3px 8px;
+ background-color: var(--primary);
+}
+
+
+hr{
+  margin-top:10px;
+  color:var(--primary);
+  box-shadow:0px 0px 10px 2px var(--primary);
+}
+.L-known{
+margin:10px 0px;
+color: white;
+font-size: 20px;
+
 }
 
 

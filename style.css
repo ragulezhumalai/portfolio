@@ -88,12 +88,13 @@ li::after{
   display:flex;
   position: absolute;
   flex-direction: column;
-  top:9.7%;
+  top:68px;
   height:90vh;
   overflow: hidden;
   left:-2.2rem;
   width: 0em;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background-color: rgba(42, 42, 42, 0.433);
   justify-content: space-around;
   align-items:center;

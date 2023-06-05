@@ -2,9 +2,10 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+  /* background-color: black; */
 }
 :root{
-  --primary:rgb(65, 183, 102);
+  --primary:rgb(91, 185, 102);
   
 }
 
@@ -62,18 +63,22 @@ li::after{
   height:2px;
   align-items: center;
   width:0%;
-  transform: scaleX(1);
+  transform: scaleX(-1);
   transition:  .4s;
  }
  li:hover::after{
-  content:'';
+  content:'            ';
+  letter-spacing: 0px;
   display:block;
-  border: 1px solid var(--primary);
+  border: 0px solid var(--primary);
   border-radius: 30px;
   background-color: var(--primary) ;
   height:3px;
+  text-align: right;
+  
+  box-shadow: 0px 3px 10px var(--primary);
   width:100%;
-  transform: scaleX(1);
+  transform: scaleX(-1);
   
  }
  
@@ -110,7 +115,10 @@ li::after{
   width:40vw;
   transition:all .5s ease;
 }
+li:hover:after{
 
+  padding: 0px 36px;
+}
  
  .burger{
   display:block;
@@ -152,6 +160,7 @@ li::after{
   outline: 2px solid black;
   padding:15px;
   font-family: 'Josefin Sans', sans-serif;
+  transition: all .5s ease;
 }
 
 .hello{
@@ -162,18 +171,39 @@ li::after{
 .name{
   font-weight: bold;
   font-size: 2em;
+  margin: 10px 0px;
 }
 
 .name span{
+font-size:2.3em;
+background: linear-gradient(50deg,white,var(--primary),white);
+background-size: 200%;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
 
-  color: var(--primary);
-  font-size:2em;
-  transition: .5s;
+
+animation: name 2s linear infinite;
 }
+
+@keyframes name{
+ 0%{
+  background-position: 0%;
+
+ }
+100%{
+  background-position: 200%;
+}
+
+
+}
+
+
+
 
 .fend{
   
   font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
 .top-sec{
@@ -200,15 +230,7 @@ hr{
   color:red;
 
 }
-.skills{
-  box-sizing: content-box;
-  margin-top: 20px;
-  height:60px;
-  outline: auto;
-  display:flex;
-  
 
-}
 .descript{
  margin: 20px 10px;
 
@@ -222,8 +244,36 @@ hr{
   }
 }
 
-@media (max-width:90px){
+@media (max-width:900px){
   .main-img{
    height:50vh;
   }
+}
+
+
+.skills{
+  box-sizing: content-box;
+  margin: 30px 0px;
+  height:60px;
+  font-size: .98rem ;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+.skills i{
+ 
+font-size: 1.5rem;
+color: black;
+border-radius: 18px;
+background-color: var(--primary);
+display: flex;
+border:0.8px solid black;
+align-items: center;
+justify-content: center;
+height:2.2rem;
+width:2.2rem;
+box-shadow: 0px 0px 10px var(--primary);
+
 }

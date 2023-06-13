@@ -182,6 +182,7 @@ background-size: 200%;
 -webkit-background-clip: text;
 
 
+
 animation: name 2s linear infinite;
 }
 
@@ -233,6 +234,7 @@ hr{
 
 .descript{
  margin: 20px 10px;
+ word-spacing: 5px;
 
 
 

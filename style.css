@@ -2,7 +2,6 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
-  /* background-color: black; */
 }
 :root{
   --primary:rgb(91, 185, 102);
@@ -11,7 +10,7 @@
 
 ::selection{
   color:var(--primary);
-  background-color:black ;
+  /* background-color:black ; */
 }
 .header{
   padding:10px 5px 5px;
@@ -19,9 +18,18 @@
   color:var(--primary);
   display:flex;
   align-items: center;
+  width:100vw;
+  position: absolute;
   justify-content: space-between;
   background-color: rgb(22, 22, 22);
   font-family: 'Josefin Sans', sans-serif;
+  animation:shadow 4s infinite;
+}
+@keyframes shadow {
+  50%{
+
+  box-shadow: 0px 5px 10px var(--primary);
+  }
 }
 
 .title{
@@ -157,8 +165,8 @@ li:hover:after{
   color:white;
   background-color:rgb(0, 0, 0);
   height: 100vh;
-  outline: 2px solid black;
   padding:15px;
+  padding-top: 100px;
   font-family: 'Josefin Sans', sans-serif;
   transition: all .5s ease;
 }
@@ -209,6 +217,7 @@ animation: name 2s linear infinite;
 
 .top-sec{
   display: flex;
+  
 }
 
 .main-img{
@@ -279,3 +288,5 @@ width:2.2rem;
 box-shadow: 0px 0px 10px var(--primary);
 
 }
+
+

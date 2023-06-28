@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 :root{
-  --primary:rgb(91, 185, 102);
+  --primary:rgba(0, 229, 255, 0.996);
   
 }
 
 ::selection{
   color:var(--primary);
   /* background-color:black ; */
+}
+body{
+  background-color: black;
 }
 .header{
   padding:10px 5px 5px;
@@ -23,12 +26,12 @@
   justify-content: space-between;
   background-color: rgb(22, 22, 22);
   font-family: 'Josefin Sans', sans-serif;
-  animation:shadow 4s infinite;
+  animation:shadow 4s  infinite;
 }
 @keyframes shadow {
   50%{
 
-  box-shadow: 0px 5px 10px var(--primary);
+  box-shadow: 0px 0px 50px var(--primary);
   }
 }
 
@@ -95,7 +98,12 @@ li::after{
  }
  /*small screens*/
  @media (max-width:650px){
-
+  @keyframes shadow {
+    50%{
+  
+    box-shadow: 0px 5px 600px -10px var(--primary);
+    }
+  }
 
  .nbar{
   display:flex;
@@ -130,7 +138,7 @@ li:hover:after{
  
  .burger{
   display:block;
-  border: 1px solid rgb(158, 158, 158);
+  border: 0px solid rgb(158, 158, 158);
   border-radius: 5px;
   color:rgb(255, 255, 255);
   padding:10px 13px;
@@ -166,13 +174,13 @@ li:hover:after{
   background-color:rgb(0, 0, 0);
   height: 100vh;
   padding:15px;
-  padding-top: 100px;
+  padding-top:80px;
   font-family: 'Josefin Sans', sans-serif;
   transition: all .5s ease;
 }
 
 .hello{
-  margin-top: 3em;
+  margin-top: 2em;
   font-size: 2.5em;
 }
 
@@ -208,7 +216,7 @@ animation: name 2s linear infinite;
 
 .fend{
   
-  font-size: 1.5em;
+  font-size: 1.1em;
   margin-bottom: 20px;
 }
 
@@ -220,12 +228,17 @@ animation: name 2s linear infinite;
 .main-img{
   height: 80vh;
   flex:1;
-  margin: 0px;
+  background-color: var(--primary);
+  border-Radius:200px;
+  margin-top: 100px;
+  justify-content: center;
+  /* outline: auto; */
 
   
 }
 .TScontent{
   flex:2;
+  /* outline: auto; */
 }
 
 hr{
@@ -247,9 +260,20 @@ hr{
 }
 /*content media query*/
 @media (max-width:750px){
-  .main-img{
-   display: none;
+  .top-sec{
+    flex-direction: column-reverse;
+  
   }
+  .main-img{
+   margin:0px;
+  }
+  .TScontent{
+    margin-top: 0px;
+  }
+  .hello{
+    margin-top: 10px;
+  }
+  
 }
 
 @media (max-width:900px){
@@ -281,9 +305,26 @@ border:0.8px solid black;
 align-items: center;
 justify-content: center;
 height:2.2rem;
+
 width:2.2rem;
-box-shadow: 0px 0px 10px var(--primary);
+
 
 }
+.skills p{
+display: block;
+}
+
+.skills i:hover{
+  font-size: 2rem;
+  box-shadow: 0px 0px 10px 2px var(--primary);
+  transition: .4s;
+  color:var(--primary);
+  background-color: black;
+  
+}
+.skills i:hover .skills p{
+  display: block;
+}
+
 
 

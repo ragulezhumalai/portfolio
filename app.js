@@ -4,3 +4,8 @@ let Links = document.querySelector(".nbar");
 burger.addEventListener('click',()=>{
   Links.classList.toggle("nbar-active")
 })
+
+
+
+//practice
+

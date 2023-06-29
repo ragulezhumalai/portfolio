@@ -5,7 +5,8 @@
 }
 :root{
   --primary:rgba(140,0, 255, 0.996);
-  /* --default-color:rgba(140,0, 255, 0.996); */
+  --secondary:#000000;
+  --text:rgb(255, 255, 255);
   
 }
 
@@ -14,7 +15,7 @@
   /* background-color:black ; */
 }
 body{
-  background-color: black;
+  background-color:var(--secondary);
 }
 .header{
   padding:10px 5px 5px;
@@ -25,7 +26,7 @@ body{
   width:100vw;
   position: absolute;
   justify-content: space-between;
-  background-color: rgb(22, 22, 22);
+  background-color: var(--secondary);
   font-family: 'Josefin Sans', sans-serif;
   animation:shadow 4s  infinite;
 }
@@ -41,7 +42,7 @@ body{
   font-size:2.5em;
 }
 .title span{
-  color:white;
+  color:var(--text);
 }
 
 li{
@@ -58,7 +59,7 @@ li{
 a{
   text-decoration:none;
   font-size: 1.2em;
-  color:white;
+  color:var(--text);
 }
 
 a:hover{
@@ -101,25 +102,23 @@ li::after{
   margin:5px;
   /* outline: auto; */
   text-align: center;
-  border-radius: 10px;
+  border-radius: 50px;
   border:0px solid red;
   font-size: .7em;
   background-color: rgba(140,0, 255, 0.996);
   font-weight: bold;
   padding: 8px 5px 5px 5px;
-  color:white;
+  color:var(--text);
   font-family: 'Josefin Sans', sans-serif;
   
- }
- .theme:active{
-  outline: none;
- }
-
-.theme option{
-  width:50px;
-  padding: 2px;
+}
+.theme option p{
+  background-color: white;
+  outline: auto;
 }
  
+
+
 .theme option:nth-child(1){
   background-color: rgba(140,0, 255, 0.996);
  }
@@ -132,9 +131,11 @@ li::after{
   }
     .theme option:nth-child(4){
       background-color: rgb(255, 0, 0);
+      border-radius: 20px;
     }
     .theme option:nth-child(5){
       background-color: rgb(255, 98, 0);
+      
     }
  /*small screens*/
  @media (max-width:650px){
@@ -156,7 +157,7 @@ li::after{
   width: 0px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  background-color: rgba(42, 42, 42, 0.433);
+  background-color: var(--secondary);
   justify-content: space-around;
   align-items:center;
   border-radius: 0px;
@@ -180,7 +181,7 @@ li:hover:after{
   display:block;
   border: 0px solid rgb(158, 158, 158);
   border-radius: 5px;
-  color:rgb(255, 255, 255);
+  color:var(--text);
   padding:10px 13px;
   margin-right: 10px;
   font-size: 30px;
@@ -210,8 +211,8 @@ li:hover:after{
  /*maincontent */
 
 .content{
-  color:white;
-  background-color:rgb(0, 0, 0);
+  color:var(--text);
+  background-color:var(--secondary);
   height: 100vh;
   padding:15px;
   padding-top:80px;
@@ -232,7 +233,7 @@ li:hover:after{
 
 .name span{
 font-size:2.3em;
-background: linear-gradient(50deg,white,var(--primary),white);
+background: linear-gradient(50deg,var(--text),var(--primary),var(--text));
 background-size: 200%;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
@@ -262,22 +263,28 @@ animation: name 2s linear infinite;
 
 .top-sec{
   display: flex;
+  /* outline: auto; */
   
 }
 
 .main-img{
-  height: 80vh;
-  flex:1;
-  background-color: var(--primary);
-  border-Radius:200px;
-  margin-top: 100px;
+  width:100%;
+  max-width:500px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  /* outline: auto; */
+  flex:1;
+  background-color:var(--primary);
+  border-radius:100%;
+  margin: 10px 50px;
+
 
   
 }
 .TScontent{
   flex:2;
+  width:100%;
+  max-width:800px;
   /* outline: auto; */
 }
 
@@ -338,20 +345,17 @@ hr{
  
 font-size: 1.5rem;
 color: black;
-border-radius: 18px;
+border-radius: 300px;
 background-color: var(--primary);
 display: flex;
 border:0.8px solid black;
 align-items: center;
 justify-content: center;
-height:2.2rem;
+height:5vh;
+/* padding:23px; */
+width:5vh;
 
-width:2.2rem;
 
-
-}
-.skills p{
-display: block;
 }
 
 .skills i:hover{
@@ -359,7 +363,7 @@ display: block;
   box-shadow: 0px 0px 10px 2px var(--primary);
   transition: .4s;
   color:var(--primary);
-  background-color: black;
+  background-color: var(--secondary);
   
 }
 .skills i:hover .skills p{

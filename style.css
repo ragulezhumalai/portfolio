@@ -5,8 +5,7 @@
 }
 :root{
   --primary:rgba(140,0, 255, 0.996);
-  --secondary:#000000;
-  --text:rgb(255, 255, 255);
+  /* --default-color:rgba(140,0, 255, 0.996); */
   
 }
 
@@ -15,7 +14,7 @@
   /* background-color:black ; */
 }
 body{
-  background-color:var(--secondary);
+  background-color: black;
 }
 .header{
   padding:10px 5px 5px;
@@ -26,7 +25,7 @@ body{
   width:100vw;
   position: absolute;
   justify-content: space-between;
-  background-color: var(--secondary);
+  background-color: rgb(22, 22, 22);
   font-family: 'Josefin Sans', sans-serif;
   animation:shadow 4s  infinite;
 }
@@ -42,7 +41,7 @@ body{
   font-size:2.5em;
 }
 .title span{
-  color:var(--text);
+  color:white;
 }
 
 li{
@@ -59,7 +58,7 @@ li{
 a{
   text-decoration:none;
   font-size: 1.2em;
-  color:var(--text);
+  color:white;
 }
 
 a:hover{
@@ -98,23 +97,32 @@ li::after{
  .burger{
   display: none;
  }
+
+ .theme-box{
+  
+  /* outline: auto; */
+  padding-right: 20px;
+align-items: center;
+
+ }
  .theme{
   margin:5px;
   /* outline: auto; */
   text-align: center;
   border-radius: 50px;
   border:0px solid red;
-  font-size: .7em;
+  font-size: .5em;
   background-color: rgba(140,0, 255, 0.996);
   font-weight: bold;
-  padding: 8px 5px 5px 5px;
-  color:var(--text);
+  padding: 4px 2px 2px 2px;
+  color:white;
   font-family: 'Josefin Sans', sans-serif;
   
-}
-.theme option p{
-  background-color: white;
-  outline: auto;
+ }
+
+.theme option{
+  background-color: rgba(255, 255, 255, 0);
+
 }
  
 
@@ -157,7 +165,7 @@ li::after{
   width: 0px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  background-color: var(--secondary);
+  background-color: rgba(42, 42, 42, 0.433);
   justify-content: space-around;
   align-items:center;
   border-radius: 0px;
@@ -181,7 +189,7 @@ li:hover:after{
   display:block;
   border: 0px solid rgb(158, 158, 158);
   border-radius: 5px;
-  color:var(--text);
+  color:rgb(255, 255, 255);
   padding:10px 13px;
   margin-right: 10px;
   font-size: 30px;
@@ -211,8 +219,8 @@ li:hover:after{
  /*maincontent */
 
 .content{
-  color:var(--text);
-  background-color:var(--secondary);
+  color:white;
+  background-color:rgb(0, 0, 0);
   height: 100vh;
   padding:15px;
   padding-top:80px;
@@ -233,7 +241,7 @@ li:hover:after{
 
 .name span{
 font-size:2.3em;
-background: linear-gradient(50deg,var(--text),var(--primary),var(--text));
+background: linear-gradient(50deg,white,var(--primary),white);
 background-size: 200%;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
@@ -274,10 +282,11 @@ animation: name 2s linear infinite;
   align-items: center;
   justify-content: center;
   flex:1;
+  border:10px  double rgb(0, 0, 0);
+  border-style: groove double;
   background-color:var(--primary);
   border-radius:100%;
-  margin: 10px 50px;
-
+  margin: 50px 70px;
 
   
 }
@@ -326,6 +335,7 @@ hr{
 @media (max-width:900px){
   .main-img{
    height:50vh;
+   margin-top:10px;
   }
 }
 
@@ -363,7 +373,7 @@ width:5vh;
   box-shadow: 0px 0px 10px 2px var(--primary);
   transition: .4s;
   color:var(--primary);
-  background-color: var(--secondary);
+  background-color: black;
   
 }
 .skills i:hover .skills p{

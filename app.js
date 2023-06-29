@@ -6,6 +6,18 @@ burger.addEventListener('click',()=>{
 })
 
 
+const root = document.documentElement;
+const list = document.getElementsByClassName("theme");
 
-//practice
+
+
+Array.from(list).forEach(function (selectElement) {
+  selectElement.addEventListener("change", function () {
+    console.log(this.value);
+    selectElement.style.setProperty("background-color",this.value)
+    root.style.setProperty("--primary", this.value);
+  });
+});
+
+root.style.setProperty("--primary", "rgba(140,0, 255, 0.996)");
 

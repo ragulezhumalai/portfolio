@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 :root{
-  --primary:rgba(0, 229, 255, 0.996);
+  --primary:rgba(140,0, 255, 0.996);
+  /* --default-color:rgba(140,0, 255, 0.996); */
   
 }
 
@@ -96,6 +97,45 @@ li::after{
  .burger{
   display: none;
  }
+ .theme{
+  margin:5px;
+  /* outline: auto; */
+  text-align: center;
+  border-radius: 10px;
+  border:0px solid red;
+  font-size: .7em;
+  background-color: rgba(140,0, 255, 0.996);
+  font-weight: bold;
+  padding: 8px 5px 5px 5px;
+  color:white;
+  font-family: 'Josefin Sans', sans-serif;
+  
+ }
+ .theme:active{
+  outline: none;
+ }
+
+.theme option{
+  width:50px;
+  padding: 2px;
+}
+ 
+.theme option:nth-child(1){
+  background-color: rgba(140,0, 255, 0.996);
+ }
+ .theme option:nth-child(2){
+  background-color: rgb(55, 206, 113);
+ }
+ 
+  .theme option:nth-child(3){
+    background-color: rgb(0, 221, 255);
+  }
+    .theme option:nth-child(4){
+      background-color: rgb(255, 0, 0);
+    }
+    .theme option:nth-child(5){
+      background-color: rgb(255, 98, 0);
+    }
  /*small screens*/
  @media (max-width:650px){
   @keyframes shadow {

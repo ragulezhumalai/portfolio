@@ -245,6 +245,7 @@ background: linear-gradient(50deg,white,var(--primary),white);
 background-size: 200%;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
+background-clip:;
 
 
 
@@ -282,8 +283,6 @@ animation: name 2s linear infinite;
   align-items: center;
   justify-content: center;
   flex:1;
-  border:10px  double rgb(0, 0, 0);
-  border-style: groove double;
   background-color:var(--primary);
   border-radius:100%;
   margin: 50px 70px;

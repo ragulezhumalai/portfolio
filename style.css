@@ -1,3 +1,9 @@
+
+html{
+  scroll-behavior:smooth;
+}
+
+
 *{
   margin:0px;
   padding:0px;
@@ -5,19 +11,19 @@
 }
 :root{
   --primary:rgba(140,0, 255, 0.996);
-  /* --default-color:rgba(140,0, 255, 0.996); */
+  --font:'Lexend Deca', sans-serif;
   
 }
 
 ::selection{
   color:var(--primary);
-  /* background-color:black ; */
+ background-color:black ; 
 }
 body{
   background-color: black;
 }
 .header{
-  padding:10px 5px 5px;
+  padding:5px 5px 5px;
   font-size: 1em;
   color:var(--primary);
   display:flex;
@@ -26,7 +32,7 @@ body{
   position: fixed;
   justify-content: space-between;
   background-color: rgb(22, 22, 22);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font);
  margin-top:0px;
   animation:shadow 4s  infinite;
 }
@@ -100,15 +106,12 @@ li::after{
  }
 
  .theme-box{
-  
-  /* outline: auto; */
   padding-right: 20px;
 align-items: center;
 
  }
  .theme{
   margin:5px;
-  /* outline: auto; */
   text-align: center;
   border-radius: 50px;
   border:0px solid red;
@@ -117,7 +120,7 @@ align-items: center;
   font-weight: bold;
   padding: 4px 2px 2px 2px;
   color:white;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font);
   
  }
 
@@ -225,7 +228,7 @@ li:hover:after{
   height: 100vh;
   padding:15px;
   padding-top:80px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family:var(--font);
   transition: all .5s ease;
 }
 
@@ -285,6 +288,7 @@ margin:auto;
   min-width: 50%;
   width: 50%;
   background-color:var(--primary);
+  
   border-radius:100%;
   margin-left: auto;
   margin-right: auto;
@@ -378,6 +382,5 @@ width:5vh;
 .skills i:hover .skills p{
   display: block;
 }
-
 
 

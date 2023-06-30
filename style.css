@@ -246,10 +246,6 @@ background: linear-gradient(50deg,white,var(--primary),white);
 background-size: 200%;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
-background-clip:;
-
-
-
 animation: name 2s linear infinite;
 }
 
@@ -273,28 +269,34 @@ animation: name 2s linear infinite;
 
 .top-sec{
   display: flex;
-  /* outline: auto; */
   
 }
 
+.img-div{
+display: flex;
+flex-direction: row-reverse;
+align-items:center;
+ justify-content: space-evenly;
+max-width: 400px;
+margin:auto;
+  
+}
 .main-img{
-  width:100%;
-  max-width:500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex:1;
+  min-width: 50%;
+  width: 50%;
   background-color:var(--primary);
   border-radius:100%;
-  margin: 70px 50px 10px;
-
-  
+  margin-left: auto;
+  margin-right: auto;
+  flex:1;
 }
 .TScontent{
   flex:2;
   width:100%;
-  max-width:800px;
-  /* outline: auto; */
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  max-width:600px;
 }
 
 hr{
@@ -310,8 +312,6 @@ hr{
 .descript{
  margin: 20px 10px;
  word-spacing: 5px;
-
-
 
 }
 /*content media query*/
@@ -334,7 +334,6 @@ hr{
 
 @media (max-width:900px){
   .main-img{
-   height:50vh;
    margin-top:10px;
   }
 }

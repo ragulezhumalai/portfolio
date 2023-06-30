@@ -21,3 +21,15 @@ Array.from(list).forEach(function (selectElement) {
 
 root.style.setProperty("--primary", "rgba(140,0, 255, 0.996)");
 
+// practice
+
+function outer(n){
+  return function inner(){
+    return n++
+  }
+}
+
+let call=outer(5)
+console.log(call())
+console.log(call())
+console.log(call())

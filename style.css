@@ -23,10 +23,11 @@ body{
   display:flex;
   align-items: center;
   width:100vw;
-  position: absolute;
+  position: fixed;
   justify-content: space-between;
   background-color: rgb(22, 22, 22);
   font-family: 'Josefin Sans', sans-serif;
+ margin-top:0px;
   animation:shadow 4s  infinite;
 }
 @keyframes shadow {
@@ -285,7 +286,7 @@ animation: name 2s linear infinite;
   flex:1;
   background-color:var(--primary);
   border-radius:100%;
-  margin: 50px 70px;
+  margin: 70px 50px 10px;
 
   
 }
@@ -361,7 +362,7 @@ border:0.8px solid black;
 align-items: center;
 justify-content: center;
 height:5vh;
-/* padding:23px; */
+padding:1rem;
 width:5vh;
 
 

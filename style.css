@@ -118,11 +118,27 @@ align-items: center;
   font-size: .5em;
   background-color: rgba(140,0, 255, 0.996);
   font-weight: bold;
-  padding: 4px 2px 2px 2px;
+  padding: 1px 0px 2px 0px;
   color:white;
   font-family: var(--font);
   
  }
+.theme:hover{
+  background-image: linear-gradient(65deg, #ff0000, #ff8400, #23a6d5, #8400ff);
+  background-size: 200%;
+  animation: new 3s linear alternate-reverse infinite;
+}
+
+@keyframes new {
+
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 100%;
+  }
+}
+
 
 .theme option{
   background-color: rgba(255, 255, 255, 0);

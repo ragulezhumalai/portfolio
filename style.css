@@ -12,15 +12,16 @@ html{
 :root{
   --primary:rgba(140,0, 255, 0.996);
   --font:'Lexend Deca', sans-serif;
+  --secondary:rgb(0, 0, 0);
   
 }
 
 ::selection{
   color:var(--primary);
- background-color:black ; 
+ background-color:rgb(72, 72, 72) ; 
 }
 body{
-  background-color: black;
+  background-color:var(--secondary);
 }
 .header{
   padding:5px 5px 5px;
@@ -31,7 +32,7 @@ body{
   width:100vw;
   position: fixed;
   justify-content: space-between;
-  background-color: rgb(22, 22, 22);
+  background-color: var(--secondary);
   font-family: var(--font);
  margin-top:0px;
   animation:shadow 4s  infinite;
@@ -185,7 +186,7 @@ align-items: center;
   width: 0px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  background-color: rgba(42, 42, 42, 0.433);
+  background-color:var(--secondary);
   justify-content: space-around;
   align-items:center;
   border-radius: 0px;
@@ -240,7 +241,7 @@ li:hover:after{
 
 .content{
   color:white;
-  background-color:rgb(0, 0, 0);
+  background-color:var(--secondary);
   height: 100vh;
   padding:15px;
   padding-top:80px;
@@ -291,25 +292,25 @@ animation: name 2s linear infinite;
   
 }
 
-.img-div{
-display: flex;
-flex-direction: row-reverse;
-align-items:center;
- justify-content: space-evenly;
-max-width: 400px;
-margin:auto;
-  
-}
-.main-img{
-  min-width: 50%;
-  width: 50%;
-  background-color:var(--primary);
-  
-  border-radius:100%;
-  margin-left: auto;
-  margin-right: auto;
-  flex:1;
-}
+  .img-div{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:center;
+  justify-content: space-evenly;
+  max-width: 400px;
+  margin:auto;
+    
+  }
+  .main-img{
+    min-width: 50%;
+    width: 50%;
+    background-color:var(--primary);
+    
+    border-radius:100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex:1;
+  }
 .TScontent{
   flex:2;
   width:100%;
@@ -399,4 +400,11 @@ width:5vh;
   display: block;
 }
 
-
+.overlay{
+  position: absolute;
+  
+  background-color: rgba(255, 255, 255, 0.182);
+  border-radius: 10px;
+  font-size: 1.5em;
+  backdrop-filter: blur(15px);
+}

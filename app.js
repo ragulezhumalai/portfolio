@@ -16,4 +16,6 @@ Array.from(list).map((selected)=>{
     console.log(selected.value)
     // for changing BG-color of selected option.
     selected.style.setProperty("background-color",selected.value)
-root.style.setProperty("--primary",selected.value);})})
+    root.style.setProperty("--primary",selected.value);
+  })
+})

@@ -33,6 +33,7 @@ body{
   position: fixed;
   justify-content: space-between;
   background-color: var(--secondary);
+  
   font-family: var(--font);
  margin-top:0px;
   animation:shadow 5s  infinite;
@@ -186,7 +187,7 @@ align-items: center;
   width: 0px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  background-color:var(--secondary);
+  background-color:rgba(0, 0, 0, 0.244);
   justify-content: space-around;
   align-items:center;
   border-radius: 0px;
@@ -407,4 +408,15 @@ width:5.5vh;
   border-radius: 10px;
   font-size: 1.5em;
   backdrop-filter: blur(15px);
+}
+
+
+
+@keyframes shadow {
+  50% {
+    box-shadow: 0px 0px 50px var(--primary); /* Lower intensity */
+  }
+}
+.header {
+  transform: translateY(0); /* Instead of margin-top */
 }
